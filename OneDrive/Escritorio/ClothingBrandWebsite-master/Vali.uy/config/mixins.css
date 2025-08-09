@@ -1,0 +1,13 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin standard-font {
+    font-family: $font-family-main;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  @mixin transition($property, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+  }

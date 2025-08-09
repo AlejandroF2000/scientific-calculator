@@ -1,0 +1,30 @@
+.button {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    color: #fff;
+    @include border-radius(5px);
+    border: none;
+    cursor: pointer;
+    @include transition(background-color, $hover-transition), 
+              transition(transform, $hover-transition);
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      transform: translateY(-2px);
+    }
+  }
+  
+  .btn-primary {
+    @extend .button;
+  }
+  
+  .btn-secondary {
+    @extend .button;
+    background-color: $secondary-color;
+    color: $primary-color;
+  
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+      transform: translateY(-2px);
+    }
+  }

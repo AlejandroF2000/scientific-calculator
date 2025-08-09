@@ -1,0 +1,45 @@
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+  
+    .social-logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+  
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+        @include transition(transform, $hover-transition);
+  
+        &:hover {
+          transform: scale(1.1);
+          filter: brightness(1.2);
+        }
+      }
+  
+      a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+      }
+    }
+  
+    .map {
+      width: 400px;
+      height: auto;
+      text-align: center;
+  
+      h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        animation: slide-in $slide-in-duration;
+        font-family: $font-family-header;
+      }
+    }
+  }
