@@ -1,8 +1,0 @@
-img[loading="lazy"] {
-    opacity: 0;
-    @include transition(opacity, $hover-transition);
-  
-    &.loaded {
-      opacity: 1;
-    }
-  }
